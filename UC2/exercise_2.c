@@ -100,7 +100,7 @@ void *thread_2(void *arg) {
 }
 
 int main() {
-    puts("syncronization exercise with semaphore");
+    puts("synchronization exercise with semaphore:\n");
 
     int semaphore;
     int availables = 0;
