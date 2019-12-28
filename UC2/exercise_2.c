@@ -100,7 +100,7 @@ void *thread_2(void *arg) {
 }
 
 int main() {
-    puts("synchronization exercise with semaphore:\n");
+    puts("synchronization exercise with semaphores:\n");
 
     int semaphore;
     int availables = 0;
@@ -119,7 +119,7 @@ int main() {
     parameters.semaphore = &semaphore;
 
 
-    for (int ind = 0; ind < 5; ind++) {
+    for (int index = 0; index < 5; index++) {
 
         pthread_create(&h1, NULL, thread_1, (void *) &parameters);
         pthread_create(&h2, NULL, thread_2, (void *) &parameters);
